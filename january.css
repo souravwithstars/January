@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+}
+body {
+    width: 500px;
+    height: 420px;
+    margin: 10px auto;
+    font-family: sans-serif;
+}
+article {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 32px;
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 10px;
+}
+.month {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(20, 30, 90, 0.8);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+}
+.schedule {
+    height: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color:rgb(100, 150, 235, 0.25);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.days {
+    padding: 10px;
+    height: 10%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: rgba(100, 150, 235, 0.8);
+    color: white;
+}
+.dates {
+    padding: 10px;
+    height: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    justify-items: flex-end;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+span {
+    width: 13%;
+    text-align: center;
+}
+.dates span {
+    background-color: rgb(255, 255, 255);
+}
+.dates span:nth-child(7n+1), 
+.dates span:nth-child(7n) {
+    color:rgba(100, 150, 235, 0.8);
+}
